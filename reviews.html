@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Reviews | DAVIDS DIGITALS LTD.©</title>
+
+    <meta
+        name="description"
+        content="See what people have to say about DAVIDS DIGITALS LTD.© and leave your own review."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="brand">
+
+            <div class="diamond-logo">
+                ◆
+            </div>
+
+            <div class="brand-name">
+                <span>DAVIDS</span>
+                <span>DIGITALS</span>
+            </div>
+
+        </a>
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Open navigation"
+        >
+            ☰
+        </button>
+
+        <nav id="navMenu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="projects.html">
+                Projects
+            </a>
+
+            <a href="activities.html">
+                Activities
+            </a>
+
+            <a href="reviews.html">
+                Reviews
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    ◆ CLIENT REVIEWS
+                </div>
+
+                <h1>
+                    Your Experience
+                    <span>Matters.</span>
+                </h1>
+
+                <p>
+                    Every project, idea and interaction helps us
+                    improve. See what people have shared and tell
+                    us about your own experience with DAVIDS DIGITALS.
+                </p>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="diamond-container">
+
+                    <div class="big-diamond">
+                        ◆
+                    </div>
+
+                    <div class="orbit orbit-one"></div>
+
+                    <div class="orbit orbit-two"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             REVIEWS
+        ========================== -->
+
+        <section class="reviews-section section">
+
+            <div class="section-label">
+                WHAT PEOPLE SAY
+            </div>
+
+            <h2>
+                Experiences from our
+                <span>community.</span>
+            </h2>
+
+            <p>
+                We value honest feedback because it helps us understand
+                what we're doing well and where we can continue to grow.
+            </p>
+
+
+            <div
+                class="reviews-container"
+                id="reviewsContainer"
+            >
+
+                <div class="review-empty">
+
+                    <div class="activity-icon">
+                        ★
+                    </div>
+
+                    <h3>
+                        No reviews yet
+                    </h3>
+
+                    <p>
+                        Be one of the first people to share your
+                        experience with DAVIDS DIGITALS.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 REVIEW BUTTON
+            ========================== -->
+
+            <div class="contact-buttons">
+
+                <button
+                    class="review-btn"
+                    id="reviewBtn"
+                    type="button"
+                >
+                    Leave a Review →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHY REVIEWS MATTER
+        ========================== -->
+
+        <section class="about section">
+
+            <div class="section-label">
+                OUR APPROACH
+            </div>
+
+            <h2>
+                Building with
+                <span>people in mind.</span>
+            </h2>
+
+            <p>
+                DAVIDS DIGITALS is built around the idea that technology
+                should serve people. Feedback gives us another way to
+                understand real experiences and continuously improve
+                the digital products and services we create.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+
+        <section class="contact section">
+
+            <div class="section-label">
+                WORK WITH US
+            </div>
+
+            <h2>
+                Have something
+                <span>to build?</span>
+            </h2>
+
+            <p>
+                Whether you have a website idea, an AI concept,
+                a creative project or a digital product in mind,
+                we'd love to hear about it.
+            </p>
+
+            <div class="contact-buttons">
+
+                <a
+                    href="contact.html"
+                    class="contact-btn"
+                >
+                    Contact DAVIDS DIGITALS →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         REVIEW MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="reviewModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-box">
+
+            <button
+                class="close-modal"
+                id="closeModal"
+                type="button"
+                aria-label="Close review form"
+            >
+                ×
+            </button>
+
+            <div class="section-label">
+                SHARE YOUR EXPERIENCE
+            </div>
+
+            <h2>
+                Leave a
+                <span>Review.</span>
+            </h2>
+
+            <form id="reviewForm">
+
+                <input
+                    type="text"
+                    id="reviewName"
+                    placeholder="Your name"
+                    maxlength="50"
+                    required
+                >
+
+                <textarea
+                    id="reviewText"
+                    placeholder="Write your review..."
+                    rows="5"
+                    maxlength="500"
+                    required
+                ></textarea>
+
+
+                <div class="rating">
+
+                    <span
+                        class="rating-star"
+                        data-rating="1"
+                    >
+                        ★
+                    </span>
+
+                    <span
+                        class="rating-star"
+                        data-rating="2"
+                    >
+                        ★
+                    </span>
+
+                    <span
+                        class="rating-star"
+                        data-rating="3"
+                    >
+                        ★
+                    </span>
+
+                    <span
+                        class="rating-star"
+                        data-rating="4"
+                    >
+                        ★
+                    </span>
+
+                    <span
+                        class="rating-star"
+                        data-rating="5"
+                    >
+                        ★
+                    </span>
+
+                </div>
+
+
+                <input
+                    type="hidden"
+                    id="reviewRating"
+                    value="0"
+                >
+
+
+                <button
+                    type="submit"
+                    class="submit-review"
+                >
+                    Submit Review
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <div class="diamond-logo">
+                ◆
+            </div>
+
+            <strong>
+                DAVIDS DIGITALS LTD.©
+            </strong>
+
+        </div>
+
+        <p>
+            Building Digital Solutions for Tomorrow.
+        </p>
+
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © 2026 DAVIDS DIGITALS LTD. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
